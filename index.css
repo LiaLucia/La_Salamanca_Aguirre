@@ -11,61 +11,37 @@ body {
 
 }
 
-.contenedorSuperior {
-    background-color: #fff;
-    height: 80px;
-    padding: 0.5% !important;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    border-width: 0px 0px 1px 0px;
-    border-style: solid;
-    border-color: black;
+.contenedorPrincipal {
+    max-width: 100%;
+    margin: 2px;
 }
+
+carousel-inner img {
+    width: 100%;
+    height: 100%;
+
+  }
+
+  .carousel-item img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+  
 
 .textoDerecha img{
     height: 90px;
+    display: flex!important;
+    box-sizing: border-box;
 }
 
-.textoIzquierda .menu {
-    font-weight: 300;
-}
 
-.textoIzquierda .menu li{
-    display: inline-block;
-    text-align: left;
-    padding: 10px;
-}
-
-.textoIzquierda .menu a{
-    text-decoration: none;
-}
-
-.textoIzquierda .menu a:hover{
-    text-decoration: none;
-    background-color: #ffa500;
-    color: #fff;
-    padding: 40px 20px 40px 20px;
-    
-}
-
-.contenedorSuperior .textoIzquierda{
-    text-align: left;
-    list-style-type: none;
-    color: #fff;
-}
 
 .contenedorSuperior .textoDerecha{
     align-content: space-between;
     list-style-type: none;
     display: inline-block;
-}
-
-
-.imgPrincipal{
-
-    margin: 2px;
 }
 
 
@@ -88,7 +64,6 @@ body {
 }
 
 .contenedorInferior p{
-    padding: 0.5% !important;
     margin: 0.5% !important;
 }
 
@@ -200,19 +175,9 @@ body {
 
 
 /* NOSOTROS */
-.contenedorPrincipalNosotros{
-    display: grid;
-    grid-template-areas: 
-    "img img img img img img"
-    "nosotros nosotros nosotros nuestraHistoria nuestraHistoria nuestraHistoria"
-    "opinion1 opinion1 opinion2 opinion2 opinion3 opinion3";
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 1fr 0.5fr 1fr;
-    margin: 12px;
-    padding: 1px;
-    grid-column-gap: 5px;
-    grid-row-gap: 10px;
 
+.contenedorPrincipalNosotros{
+    margin: 2px;
 }
 
 .contenedorPrincipalNosotros .contenedorImagen{
@@ -221,21 +186,17 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     grid-area: img;
-    margin: 3px;
+    padding: 3px;
 }
 
 .contenedorPrincipalNosotros .nosotros{
     background-color: #eedf578a;
-    height: 100%;
-    grid-area: nosotros;
-    margin: 3px;    
+    height: 200px;
 }
 
 .contenedorPrincipalNosotros .nosotros:hover{
     background-color: #eedf578a;
-    height: 100%;
-    grid-area: nosotros;
-    margin: 3px;    
+
     transform: scale(1.01,1.01);
 }
 
@@ -246,63 +207,46 @@ body {
 
 .contenedorPrincipalNosotros .nuestraHistoria{
     background-color: #eedf578a;
-    height: 100%;
-    grid-area: nuestraHistoria;
-    margin: 3px;
+    height: 200px;
+
 }
 
 .contenedorPrincipalNosotros .nuestraHistoria:hover{
     background-color: #eedf578a;
-    height: 100%;
-    grid-area: nuestraHistoria;
-    margin: 3px;
+
     transform: scale(1.01,1.01);
 }
 
 .contenedorPrincipalNosotros .opinion1{
     background-color: #ffd208d7;
-    height: 100%;
-    grid-area: opinion1;
-    margin: 3px;
+    height: 200px;
 
 }
 
 
 .contenedorPrincipalNosotros .opinion1:hover{
     background-color: #ffd208d7;
-    height: 100%;
-    grid-area: opinion1;
-    margin: 3px;
     transform: scale(1.01,1.01);
 }
 
 .contenedorPrincipalNosotros .opinion2{
     background-color: #ffd208d7;
-    height: 100%;
-    grid-area: opinion2;
-    margin: 3px;
+    height: 200px;
 }
 
 .contenedorPrincipalNosotros .opinion2:hover{
     background-color: #ffd208d7;
-    height: 100%;
-    grid-area: opinion2;
-    margin: 3px;
     transform: scale(1.01,1.01);
+    
 }
 
 .contenedorPrincipalNosotros .opinion3{
     background-color: #ffd208d7;
-    height: 100%;
-    grid-area: opinion3;
-    margin: 3px;
+    height: 200px;
 }
 
 .contenedorPrincipalNosotros .opinion3:hover{
     background-color: #ffd208d7;
-    height: 100%;
-    grid-area: opinion3;
-    margin: 3px;
     transform: scale(1.01,1.01);
 }
 
@@ -372,14 +316,8 @@ body {
     resize: none;
   }
 .formularioContacto button{
-    background-color: #4CAF50;
-    border: none;
-    color: white;
     padding: 16px 32px;
-    text-decoration: none;
     margin: 4px 2px;
-    cursor: pointer;
-    
 }
 
 .volver {
