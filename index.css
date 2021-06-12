@@ -105,6 +105,8 @@ carousel-inner img {
 .eventosImagen img{
     height: 100%;
     width: 100%;
+    object-fit: cover;
+    
 }
 
 .eventosTexto{
@@ -124,6 +126,7 @@ carousel-inner img {
 .restauranteImagen img{
     height: 100%;
     width: 100%;
+    object-fit: cover;
 }
 
 .restauranteTexto{
