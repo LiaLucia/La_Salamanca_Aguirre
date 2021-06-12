@@ -95,21 +95,9 @@ carousel-inner img {
     justify-content: space-between;
 }
 
-.servicios{
-    background-color: #ffa500;
-    margin: 12px;
-    text-align: center;
-}
-
-.eventos{
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    margin: 12px;
-}
 
 .eventosImagen{
-    width: 50%;
+
     height: 300px;
     margin: 10px;
 }
@@ -120,20 +108,15 @@ carousel-inner img {
 }
 
 .eventosTexto{
-    width: 50%;
     height: 300px;
     margin: 10px;
 }
-
-.restaurante{
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    margin: 12px;
+.eventosTexto h2{
+    text-align: center;
 }
 
+
 .restauranteImagen{
-    width: 50%;
     height: 300px;
     margin: 10px;
 }
@@ -144,20 +127,16 @@ carousel-inner img {
 }
 
 .restauranteTexto{
-    width: 50%;
     height: 300px;
     margin: 10px;
 }
 
-.catering{
-    display: flex;
-    flex-direction: row;
-    background-color: white;
-    margin: 12px;
+.restauranteTexto h2{
+    text-align: center;
 }
 
+
 .cateringImagen{
-    width: 50%;
     height: 300px;
     margin: 10px;
 }
@@ -168,21 +147,23 @@ carousel-inner img {
 }
 
 .cateringTexto{
-    width: 50%;
     height: 300px;
     margin: 10px;
 }
-
+.cateringTexto h2{
+    text-align: center;
+}
 
 /* NOSOTROS */
 
 .contenedorPrincipalNosotros{
     margin: 2px;
+
 }
 
 .contenedorPrincipalNosotros .contenedorImagen{
     background-image: url(./img/barNosotros.jpg);
-    height: 400px;
+    height: 500px;
     background-repeat: no-repeat;
     background-size: cover;
     grid-area: img;
@@ -203,6 +184,8 @@ carousel-inner img {
 .contenedorPrincipalNosotros h1{
     text-align: center;
     margin: 10px;
+    font-family: "AvenirNext","Helvetica Neue",Helvetica,Arial,sans-serif;
+    
 }
 
 .contenedorPrincipalNosotros .nuestraHistoria{
@@ -213,13 +196,13 @@ carousel-inner img {
 
 .contenedorPrincipalNosotros .nuestraHistoria:hover{
     background-color: #eedf578a;
-
     transform: scale(1.01,1.01);
 }
 
 .contenedorPrincipalNosotros .opinion1{
     background-color: #ffd208d7;
-    height: 200px;
+    height: 250px;
+    margin:10px 5px;
 
 }
 
@@ -227,49 +210,80 @@ carousel-inner img {
 .contenedorPrincipalNosotros .opinion1:hover{
     background-color: #ffd208d7;
     transform: scale(1.01,1.01);
+    margin:10px 5px;
 }
 
 .contenedorPrincipalNosotros .opinion2{
     background-color: #ffd208d7;
-    height: 200px;
+    height: 250px;
+    margin:10px 5px;
 }
 
 .contenedorPrincipalNosotros .opinion2:hover{
     background-color: #ffd208d7;
     transform: scale(1.01,1.01);
+    margin:10px 5px;
     
 }
 
 .contenedorPrincipalNosotros .opinion3{
     background-color: #ffd208d7;
-    height: 200px;
+    height: 250px;
+    margin:10px 5px;
 }
 
 .contenedorPrincipalNosotros .opinion3:hover{
     background-color: #ffd208d7;
     transform: scale(1.01,1.01);
+    margin:10px 5px;
 }
 
-.contenedorPrincipalNosotros h1{
-    text-align: center;
-    margin: 10px;
-}
 
 .contenedorPrincipalNosotros p{
     text-align: justify;
     margin: 10px;
+    font-family: "AvenirNext","Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
-/* CONTACTO */
-.contenedorPrincipalContacto {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.contenedorPrincipalNosotros .opinion1 p{
+    color: #fff;
+    text-align: center;
+    font-family: "AvenirNext","Helvetica Neue",Helvetica,Arial,sans-serif;
+
 }
+
+.contenedorPrincipalNosotros .opinion1 img{
+    padding: 10px;
+}
+
+.contenedorPrincipalNosotros .opinion2 p{
+    color: #fff;
+    text-align: center;
+    font-family: "AvenirNext","Helvetica Neue",Helvetica,Arial,sans-serif;
+
+}
+
+.contenedorPrincipalNosotros .opinion2 img{
+    padding: 10px;
+}
+
+.contenedorPrincipalNosotros .opinion3 p{
+    color: #fff;
+    text-align: center;
+    font-family: "AvenirNext","Helvetica Neue",Helvetica,Arial,sans-serif;
+
+
+}
+
+.contenedorPrincipalNosotros .opinion3 img{
+    padding: 10px;
+}
+/* CONTACTO */
+
 .mapaContacto{
     overflow:hidden;
-    width: 50%;
-    height: auto;
+    width: 100%;
+    height: 100%;
     padding: 1%;
 }
 
@@ -279,8 +293,8 @@ carousel-inner img {
 }
 
 .formularioContacto{
-    width: 50%;
-    height: auto;
+    width: 100%;
+    height: 100%;
     padding: 1%;
 }
 .formularioContacto .formulario{
@@ -325,3 +339,31 @@ carousel-inner img {
     color: red;
 }
 
+
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+    .eventosTexto{
+        height: 200px;
+    }
+    .restauranteTexto{
+        height: 200px;
+    }
+    .cateringTexto{
+        height: 200px;
+    }
+  }
+  
+  /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .eventosTexto{
+        height: 200px;
+    }
+    .restauranteTexto{
+        height: 200px;
+    }
+    .cateringTexto{
+        height: 200px;
+    }
+    
+  }
