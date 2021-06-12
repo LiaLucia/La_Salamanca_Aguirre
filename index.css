@@ -117,6 +117,9 @@ carousel-inner img {
     text-align: center;
 }
 
+.eventosTexto p{
+    text-align: justify;
+}
 
 .restauranteImagen{
     height: 300px;
@@ -132,6 +135,10 @@ carousel-inner img {
 .restauranteTexto{
     height: 300px;
     margin: 10px;
+}
+
+.restauranteTexto p{
+    text-align: justify;
 }
 
 .restauranteTexto h2{
@@ -152,6 +159,10 @@ carousel-inner img {
 .cateringTexto{
     height: 300px;
     margin: 10px;
+}
+
+.cateringTexto p{
+    text-align: justify;
 }
 .cateringTexto h2{
     text-align: center;
