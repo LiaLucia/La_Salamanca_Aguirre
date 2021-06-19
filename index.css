@@ -95,6 +95,13 @@ carousel-inner img {
     justify-content: space-between;
 }
 
+.tituloServicios{
+    height: 40px;
+}
+
+.tituloServicios h1{
+    text-align: center;
+}
 
 .eventosImagen{
 
