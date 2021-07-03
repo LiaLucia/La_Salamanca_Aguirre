@@ -42,8 +42,8 @@ carousel-inner img {
 
 .textoDerecha__img{
     height: 90px;
-    display: flex!important;
-    box-sizing: border-box;
+    /*display: flex!important;
+    box-sizing: border-box;*/
 }
 
 
@@ -215,7 +215,7 @@ carousel-inner img {
 }
 
 .contenedorPrincipalNosotros .opinion1 p{
-    color: #fff;
+    color: #000;
     text-align: center;
     font-family: "AvenirNext","Helvetica Neue",Helvetica,Arial,sans-serif;
 
@@ -226,7 +226,7 @@ carousel-inner img {
 }
 
 .contenedorPrincipalNosotros .opinion2 p{
-    color: #fff;
+    color: #000;
     text-align: center;
     font-family: "AvenirNext","Helvetica Neue",Helvetica,Arial,sans-serif;
 
@@ -237,7 +237,7 @@ carousel-inner img {
 }
 
 .contenedorPrincipalNosotros .opinion3 p{
-    color: #fff;
+    color: #000;
     text-align: center;
     font-family: "AvenirNext","Helvetica Neue",Helvetica,Arial,sans-serif;
 
@@ -321,6 +321,20 @@ carousel-inner img {
     .cateringTexto{
         height: 200px;
     }
+    .carousel-item img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+    .contenedorPrincipalNosotros .contenedorImagen{
+        background-image: url(./img/barNosotros.jpg);
+        height: 400px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-area: img;
+        padding: 3px;
+    }
   }
   
   /* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
@@ -334,5 +348,22 @@ carousel-inner img {
     .cateringTexto{
         height: 200px;
     }
-    
+
+    .carousel-item img {
+        width: 100%;
+        height: 350px;
+        object-fit: cover;
+        object-position: 50% 50%;
+    }
+    .contenedorPrincipalNosotros .contenedorImagen{
+        background-image: url(./img/barNosotros.jpg);
+        height: 350px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-area: img;
+        padding: 3px;
+    }
   }
+
+
+  
